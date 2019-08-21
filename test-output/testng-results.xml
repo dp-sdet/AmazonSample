@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon Book Search" duration-ms="35703" started-at="2019-08-21T14:27:46Z" finished-at="2019-08-21T14:28:22Z">
+    <groups>
+    </groups>
+    <test name="GoGo Case Study" duration-ms="35703" started-at="2019-08-21T14:27:46Z" finished-at="2019-08-21T14:28:22Z">
+      <class name="test.web.SearchBooks">
+        <test-method status="PASS" signature="testSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:test.web.SearchBooks@491cc5c9]" name="testSetup" is-config="true" duration-ms="4256" started-at="2019-08-21T14:27:46Z" finished-at="2019-08-21T14:27:50Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[public void test.web.SearchBooks.LoadPage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="LoadPage()[pri:1, instance:test.web.SearchBooks@491cc5c9]" name="LoadPage" duration-ms="29870" started-at="2019-08-21T14:27:50Z" finished-at="2019-08-21T14:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadPage -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:test.web.SearchBooks@491cc5c9]" name="postTestCase" is-config="true" duration-ms="1558" started-at="2019-08-21T14:28:20Z" finished-at="2019-08-21T14:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoadPage status=SUCCESS method=SearchBooks.LoadPage()[pri:1, instance:test.web.SearchBooks@491cc5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.web.SearchBooks@491cc5c9]" name="tearDown" is-config="true" duration-ms="284" started-at="2019-08-21T14:28:22Z" finished-at="2019-08-21T14:28:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.web.SearchBooks -->
+    </test> <!-- GoGo Case Study -->
+  </suite> <!-- Amazon Book Search -->
+</testng-results>

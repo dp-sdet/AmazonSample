@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Book Search]">
+  <test thread-count="5" name="GoGo Case Study(failed)">
+    <parameter name="ScreenResolution" value="1920x1080"/>
+    <parameter name="BrowserPlatform" value="Windows 10"/>
+    <parameter name="BrowserVersion" value="72"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="test.web.SearchBooks">
+        <methods>
+          <include name="LoadPage"/>
+          <include name="testSetup"/>
+          <include name="tearDown"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- test.web.SearchBooks -->
+    </classes>
+  </test> <!-- GoGo Case Study(failed) -->
+</suite> <!-- Failed suite [Amazon Book Search] -->

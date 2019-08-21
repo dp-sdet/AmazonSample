@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Amazon Book Search">
+<listeners>
+		<listener class-name="report.GenericListener" />
+	</listeners>
+	<test name="GoGo Case Study">
+		<classes>
+			<class name="test.web.SearchBooks" />
+		</classes>
+	</test>
+
+</suite> 
