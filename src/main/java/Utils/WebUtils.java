@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.monte.screenrecorder.ScreenRecorder;
 import org.testng.Reporter;
 
 /**
@@ -43,21 +42,7 @@ public abstract class WebUtils {
 	 * @param videofilename
 	 * @param recorder
 	 */
-	public static void captureVideo(String videofilename, ScreenRecorder recorder) {
-		try {
-			String currentVideoFilePath = videofilename + "avi";
-			Reporter.log("Video Recordings:<br> <a href='file:///" + currentVideoFilePath
-					+ "' target='new'>Click here to view </a>");
 
-			if (recorder != null)
-				recorder.stop();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.err.println("Error in onTestFailure" + e.getMessage());
-		}
-
-	}
 
 	public static void createFolder(String strDirectoy) {
 		boolean success = (new File(strDirectoy)).mkdirs();
