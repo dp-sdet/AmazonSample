@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import org.monte.screenrecorder.ScreenRecorder;
 import org.testng.Reporter;
 
 
@@ -150,71 +149,6 @@ public abstract class OSUtils
     return false;
   }
 
-
-
-  
-  public static String getFile(String folder, String ext) {
-    GenericExtFilter filter = new GenericExtFilter(ext);
-    
-    File dir = new File(folder);
-    
-    if (!dir.isDirectory()) {
-      throw new CustomException("Directory does not exists : " + folder);
-    }
-
-    
-    String[] list = dir.list(filter);
-    
-    if (list.length == 0) {
-      throw new CustomException("no files end with : " + ext);
-    }
-    
-    return list[0];
-  }
-
-
-
-
-
-
-
-
-  
-  public static String[] getFileList(String folder, String ext) {
-    GenericExtFilter filter = new GenericExtFilter(ext);
-    
-    File dir = new File(folder);
-    
-    if (!dir.isDirectory()) {
-      throw new CustomException("Extension Directory does not exists");
-    }
-
-    
-    String[] list = dir.list(filter);
-    
-    if (list.length == 0) {
-      throw new CustomException("There is no extension files in the extension folder");
-    }
-    
-    return list;
-  }
-
-
-  
-  public static int getFileCount(String folder, String ext) {
-    GenericExtFilter filter = new GenericExtFilter(ext);
-    
-    File dir = new File(folder);
-    
-    if (!dir.isDirectory()) {
-      throw new CustomException("Directory does not exists : " + folder);
-    }
-
-    
-    String[] list = dir.list(filter);
-    
-    return list.length;
-  }
 
 
   

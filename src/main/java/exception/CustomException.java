@@ -1,5 +1,9 @@
 package exception;
 
+/**
+ * To handle runtime and custom exceptions that might occur during test run.
+ */
+
 
 
 public class CustomException
@@ -11,13 +15,5 @@ public class CustomException
   
   public CustomException(String msg) { super(msg); }
 
-
-
-
-
-
-
-
-  
   public CustomException(String message, Throwable cause) { super(message, cause); }
 }

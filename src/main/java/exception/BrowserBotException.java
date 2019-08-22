@@ -1,4 +1,7 @@
 package exception;
+/**
+ * To handle browser timeout exception
+ */
 
 public class BrowserBotException extends RuntimeException {
 
